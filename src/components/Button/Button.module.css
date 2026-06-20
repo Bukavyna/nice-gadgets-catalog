@@ -1,0 +1,143 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+:root {
+  --background-page: #FFF;
+  --background-card: #FFF;
+  --background-hero: #373F43;
+  --color-logo: #313237;
+  --color-primary: #313237;
+  --color-secondary: #89939A;
+  --hover-color-primary: #313237;
+  --color-favorites-cart: #313237;
+  --button-temu: #313237;
+  --button-primary: #313237;
+  --button-hover: #4A4D58;
+  --button-default: #E2E6E9;
+  --button-text-add: #FFF;
+  --button-text-added: #27AE60;
+  --favorite-border: #B4BDC3;
+  --favorite-bg: #FFF;
+  --favorite-icon: #313237;
+  --separator: #E2E6E9;
+  --border-color: #E2E6E9;
+  --footer-uppercase: #89939A;
+  --color-cart-remove: #B4BDC3;
+  --color-cart-quantity: #000;
+  --divider-cart: #E2E6E9;
+  --checkout-button: #FFF;
+  --pagination-buttons-forward-back-border-primary: #B4BDC3;
+  --pagination-buttons-forward-back-background-primary: rgba(0, 0, 0, 0);
+  --pagination-buttons-forward-back-background-hover: rgba(0, 0, 0, 0);
+  --pagination-buttons-forward-back-border-hover: #313237;
+  --pagination-buttons-border-primary: #E2E6E9;
+  --pagination-buttons-border-hover: #313237;
+  --pagination-buttons-border-selected: #313237;
+  --pagination-buttons-background-primary: rgba(0, 0, 0, 0);
+  --pagination-buttons-background-hover: rgba(0, 0, 0, 0);
+  --pagination-buttons-background-selected: #313237;
+  --pagination-buttons-color-primary: #000;
+  --pagination-buttons-color-hover: #000;
+  --pagination-buttons-color-selected: #FFF;
+}
+
+body.original-dark {
+  --background-page: #0F1121;
+  --background-card: #161827;
+  --color-logo: #F1F2F9;
+  --color-primary: #F1F2F9;
+  --color-secondary: #75767F;
+  --hover-color-primary: #F1F2F9;
+  --color-favorites-cart: #F1F2F9;
+  --button-temu: #F1F2F9;
+  --button-primary: #905BFF;
+  --button-hover: #A378FF;
+  --button-default: #323542;
+  --button-text-added: #F1F2F9;
+  --favorite-border: #323542;
+  --favorite-bg: #323542;
+  --favorite-icon: #F1F2F9;
+  --separator: #3B3E4A;
+  --border-color: #FAFBFC;
+  --footer-uppercase: #F1F2F9;
+  --color-cart-remove: #4A4D58;
+  --color-cart-quantity: #F1F2F9;
+  --checkout-button: #F1F2F9;
+  --divider-cart: #3B3E4A;
+  --pagination-buttons-forward-back-border-primary: #323542;
+  --pagination-buttons-forward-back-background-primary: #323542;
+  --pagination-buttons-forward-back-background-hover: #4A4D58;
+  --pagination-buttons-forward-back-border-hover: #4A4D58;
+  --pagination-buttons-border-primary: #161827;
+  --pagination-buttons-border-hover: #3B3E4A;
+  --pagination-buttons-border-selected: #905BFF;
+  --pagination-buttons-background-primary: #161827;
+  --pagination-buttons-background-hover: #3B3E4A;
+  --pagination-buttons-background-selected: #905BFF;
+}
+
+body.ice-cap, body.electric-cyan, body.apricot-sorbet {
+  --pagination-buttons-forward-back-border-hover: #0F0F11;
+  --pagination-buttons-border-hover: #0F0F11;
+  --pagination-buttons-background-selected: #0F0F11;
+  --favorite-icon: #0F0F11;
+  --hover-color-primary: #0F0F11;
+  --color-primary: #0F0F11;
+}
+
+body.ice-cap {
+  --background-page: #F1F2F9;
+  --color-logo: #F447AF;
+  --button-primary: #216CFF;
+  --button-hover: #5729E0;
+  --button-text-added: #216CFF;
+}
+
+body.electric-cyan {
+  --background-page: #01F8FF;
+  --background-card: #00E1FF;
+  --button-primary: #4219D0;
+  --button-hover: #3D7FFF;
+  --button-text-added: #4219D0;
+}
+
+body.apricot-sorbet {
+  --background-page: #FFC4AA;
+  --background-card: #FEA77E;
+  --button-primary: #F86800;
+  --button-hover: #FF7A1A;
+  --button-text-added: #F86800;
+}
+
+.button {
+  height: 40px;
+  color: var(--button-text-add);
+  background-color: var(--button-primary);
+  padding: 0 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-weight: 600;
+}
+
+.button:disabled {
+  color: var(--button-text-added);
+  background-color: var(--button-default);
+  cursor: not-allowed;
+  opacity: 0.6;
+}

@@ -1,0 +1,54 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+.navigation__right {
+  height: 100%;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: var(--border-color);
+}
+
+@media (min-width: 640px) {
+  .divider {
+    display: none;
+  }
+}
+
+.counter {
+  position: relative;
+  left: 45px;
+  bottom: 30px;
+  margin-top: -8px;
+  margin-left: -13px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid white;
+  box-shadow: 0 0 0 1px white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background-color: #EB5757;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 700;
+}

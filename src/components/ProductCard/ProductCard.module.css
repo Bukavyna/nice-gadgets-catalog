@@ -1,0 +1,146 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+@keyframes dropdown-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radio-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 229px;
+  min-height: 435px;
+  background-color: var(--background-card);
+  border: 1px solid var(--border-color);
+  padding: 32px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px var(--border-color);
+}
+
+.card .link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.card .link .boxIcon {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+
+.card .link .boxIcon .icon {
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.name {
+  flex-grow: 1;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0;
+}
+
+.name:hover {
+  color: var(--color-primare);
+}
+
+.priceContainer .priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.priceContainer .priceContainer .newPrice {
+  color: var(--color-primary);
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.priceContainer .priceContainer .oldPrice {
+  color: var(--color-secondary);
+  text-decoration: line-through;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.separator {
+  height: 1px;
+  background-color: var(--separator);
+  margin-bottom: 16px;
+}
+
+.specs {
+  margin-bottom: 24px;
+}
+
+.specs .specItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.specs .specKey {
+  color: var(--color-secondary);
+  white-space: nowrap;
+}
+
+.specs .specValue {
+  max-width: 100px;
+  color: var(--color-primary);
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+}

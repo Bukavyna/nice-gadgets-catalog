@@ -1,0 +1,70 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+@keyframes dropdown-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radio-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  margin-inline: 16px;
+  margin-top: 72px;
+}
+
+@media (min-width: 640px) {
+  .main {
+    margin-top: 72px;
+    margin-inline: 24px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .main {
+    margin-inline: 32px;
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    margin-inline: 152px;
+  }
+}

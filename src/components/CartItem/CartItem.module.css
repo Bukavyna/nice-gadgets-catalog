@@ -1,0 +1,142 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+@keyframes dropdown-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radio-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #E2E6E9;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.cartItem:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px var(--border-color);
+}
+
+@media (min-width: 640px) {
+  .cartItem {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+  }
+}
+
+.cartItem .leftBloc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 36px;
+}
+
+@media (min-width: 640px) {
+  .cartItem .leftBloc {
+    gap: 24px;
+  }
+}
+
+.cartItem .leftBloc .button {
+  color: var(--color-cart-remove);
+  font-size: 16px;
+}
+
+.cartItem .leftBloc .icon {
+  width: 66px;
+  aspect-ratio: 1/1.2;
+  margin-right: auto;
+}
+
+.cartItem .leftBloc .productName {
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0;
+}
+
+.cartItem .rightBloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+
+@media (min-width: 640px) {
+  .cartItem .rightBloc {
+    gap: 24px;
+  }
+}
+
+.cartItem .rightBloc .counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.cartItem .rightBloc .counter .buttonQuantity {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+  border: 1px solid var(--favorite-border);
+  font-size: 16px;
+}
+
+.cartItem .rightBloc .counter .buttonQuantity:disabled {
+  color: var(--button-default);
+  border-color: var(--button-default);
+  background-color: transparent;
+}
+
+.cartItem .rightBloc .counter .quantity {
+  color: var(--color-cart-quantity);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cartItem .price {
+  text-align: right;
+  min-width: 80px;
+  color: var(--color-primary);
+  margin-left: auto;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0;
+}

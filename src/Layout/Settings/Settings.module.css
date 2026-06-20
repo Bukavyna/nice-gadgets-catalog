@@ -1,0 +1,30 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+.navigation__settings {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin-inline-start: auto;
+}
+
+@media (min-width: 640px) {
+  .navigation__settings {
+    margin-inline-end: -27px;
+  }
+}

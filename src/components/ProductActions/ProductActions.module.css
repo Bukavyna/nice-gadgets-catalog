@@ -1,0 +1,45 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+.actions .addButton {
+  width: 100%;
+}
+
+.favoriteButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid #e2e6e9;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.favoriteButton:hover {
+  border-color: #313237;
+}

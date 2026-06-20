@@ -1,0 +1,132 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+@keyframes dropdown-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radio-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.productSlider {
+  margin-right: -16px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 640px) {
+  .productSlider {
+    margin-right: -24px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .productSlider {
+    margin-right: initial;
+  }
+}
+
+.productSlider .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.productSlider .header .title {
+  display: flex;
+  gap: 16px;
+}
+
+.productSlider .header .buttonBox {
+  display: flex;
+  gap: 16px;
+}
+
+.productSlider .slider {
+  --gap: clamp(8px, 2vw, 42px);
+  --items: 1.5;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap);
+  padding: 24px 10px;
+  scroll-padding: 0 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.productSlider .slider::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .productSlider .slider {
+    --items: 2.5;
+  }
+}
+
+@media (min-width: 1040px) {
+  .productSlider .slider {
+    --items: 4;
+  }
+}
+
+@media (min-width: 1700px) {
+  .productSlider .slider {
+    --items: 5;
+  }
+}
+
+.productSlider .slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: calc((100% - (var(--items) - 1) * var(--gap)) / var(--items));
+  height: 100%;
+}
+
+.productSlider .slide .productCard {
+  height: 100%;
+}
+
+.productSlider .cardWrapper {
+  width: 100%;
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+}
+
+.arrowRight {
+  transform: rotate(360deg);
+}

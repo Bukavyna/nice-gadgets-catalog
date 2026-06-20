@@ -1,0 +1,53 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+.productsBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 288px;
+  margin-inline: auto;
+}
+
+.productsBox .title {
+  color: var(--color-primary);
+  padding-block-end: 16px;
+}
+
+.productsBox .countBadge {
+  color: var(--color-secondary);
+  margin-block-end: 32px;
+}
+
+.productsBox .sortSelect {
+  margin-block-end: 24px;
+}
+
+.productsBox .productsList {
+  margin-top: 24px;
+}
+
+.productsBox .pagination {
+  margin-top: 50px;
+}
+
+.empty, .error {
+  text-align: center;
+  color: red;
+  margin-block-start: 50px;
+  font-size: 28px;
+}

@@ -1,0 +1,141 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+@keyframes dropdown-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radio-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 16px;
+  z-index: 1000;
+  animation: dropdown-fade-in 0.4s ease;
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 280px;
+  background: var(--surface-color, #FFF);
+  border: 1px solid var(--border-color, #E2E6E9);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .dropdownContent {
+    min-width: 240px;
+  }
+}
+
+.optionCard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.optionCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.optionCard.active {
+  border-color: var(--color-accent, #4219D0);
+}
+
+.optionCard .cardContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.optionCard .cardLabel {
+  color: #313237;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.optionCard .cardBadge {
+  width: 32px;
+  height: 24px;
+  color: #313237;
+  border-radius: 4px;
+  margin-inline-start: auto;
+}
+
+.radioCustom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radioCustom .radioInner {
+  width: 10px;
+  height: 10px;
+  background-color: currentColor;
+  border-radius: 50%;
+  animation: radio-appear 0.2s ease;
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-left: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+@media (min-width: 1040px) {
+  .switcher {
+    width: 64px;
+    height: 64px;
+  }
+}

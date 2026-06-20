@@ -1,0 +1,47 @@
+.newModels {
+  margin-bottom: 80px;
+  padding: 0 16px;
+}
+
+.newModels .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.newModels .header .title {
+  display: flex;
+  gap: 16px;
+}
+
+.newModels .sliderWindow {
+  overflow: hidden;
+  width: 100%;
+}
+
+.newModels .sliderWindow .sliderContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 16px;
+}
+
+.newModels .sliderWindow .cardWrapper {
+  flex: 0 0 66.67%;
+}
+
+@media (min-width: 640px) {
+  .newModels .sliderWindow .cardWrapper {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .newModels .sliderWindow .cardWrapper {
+    flex-basis: 25%;
+  }
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+}

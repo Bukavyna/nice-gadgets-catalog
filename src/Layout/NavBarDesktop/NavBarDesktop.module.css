@@ -1,0 +1,124 @@
+/* stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown */
+:export {
+  white: #FFF;
+  greyCharcoal: #313237;
+  blackDeep: #0F1121;
+  whiteOff: #F1F2F9;
+  purple: #905BFF;
+  black: #0F0F11;
+  blueViolet: #4219D0;
+  cyanNeon: #01F8FF;
+  blueBright: #216CFF;
+  peach: #FFC4AA;
+  orange: #F86800;
+  yellow: #FFEE15;
+  brightBlue: #0057b7;
+  blueSky: #3D7FFF;
+}
+
+@keyframes dropdown-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radio-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .navigation {
+    display: flex;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .navigation {
+    margin-left: 24px;
+  }
+}
+
+.navigation .navigation__container {
+  display: flex;
+  gap: 26px;
+}
+
+.navigation__link {
+  width: min-content;
+  color: var(--color-secondary);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 11px;
+  transition: color 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.navigation__link::after {
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* .navigation__link:hover::after { */
+
+/*  transform: scaleX(1); */
+
+/* } */
+
+ .navigation__link:hover {
+  color: var(--hover-color-primary);
+ }
+
+.navigation__link:hover::after {
+  left: 0;
+  bottom: -18px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--hover-color-primary);
+
+  transform: scaleX(1);
+}
+
+@media (min-width: 1040px) {
+  .navigation__link:hover::after {
+    bottom: -27px;
+  }
+}
+
+.navigation__right {
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+}
+
+.navigation__iconLink {
+  height: 100%;
+  border-left: 1px solid var(--border-color);
+}
+
+.navigation__icon {
+  z-index: 1;
+}
