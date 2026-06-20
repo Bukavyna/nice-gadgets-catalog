@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import styles from './CatalogPage.module.scss';
 
-import { NotFound } from '@/components/NotFound';
+import { NotFound } from '../NotFound';
 import { CATEGORIES } from '@/utils/categories';
 import { sortProducts } from '@/utils/sorting';
 import { filterProductsByCategory } from '@/utils/filtering';

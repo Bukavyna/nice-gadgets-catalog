@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,7 +10,8 @@
   font: inherit;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -18,7 +21,8 @@ body {
   scroll-behavior: smooth;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -28,11 +32,18 @@ a {
   cursor: pointer;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 

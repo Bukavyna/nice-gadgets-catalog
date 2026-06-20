@@ -1,12 +1,12 @@
-@use "../../styles/effects" as *;
-@use "../../styles/mixins" as *;
+@use '../../styles/effects' as *;
+@use '../../styles/mixins' as *;
 
 .cartItem {
   display: flex;
   flex-direction: column;
   gap: 16px;
 
-  border: 1px solid #E2E6E9;
+  border: 1px solid #e2e6e9;
   padding: 16px;
 
   @include hover-scale;

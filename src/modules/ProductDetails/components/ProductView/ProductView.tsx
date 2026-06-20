@@ -1,11 +1,11 @@
 import styles from './ProductView.module.scss';
 
 import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { ColorPicker } from '@/components/ColorPicker';
-import { CapacityPicker } from '@/components/CapacityPicker';
+import { ColorPicker } from '../ColorPicker';
+import { CapacityPicker } from '../CapacityPicker';
 import { ProductDetailsType } from '@/types/product-details.types';
-import { ImageGallery } from '@/components/ImageGallery';
-import { TechSpecs } from '@/components/TechSpecs';
+import { ImageGallery } from '../ImageGallery';
+import { TechSpecs } from '../TechSpecs';
 import { AboutSection } from '@/modules/ProductDetails/components/AboutSection';
 import { ProductActions } from '@/components/ProductActions';
 import { BackButton } from '@/components/BackButton';

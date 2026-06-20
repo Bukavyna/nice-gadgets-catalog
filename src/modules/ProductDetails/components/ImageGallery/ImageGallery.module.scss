@@ -1,6 +1,6 @@
-@use "../../../../styles/effects" as *;
-@use "../../../../styles/themes" as *;
-@use "../../../../styles/mixins" as *;
+@use '../../../../styles/effects' as *;
+@use '../../../../styles/themes' as *;
+@use '../../../../styles/mixins' as *;
 
 .imagesBlock {
   display: flex;
@@ -86,4 +86,3 @@
   inset: 0;
   backdrop-filter: blur(2px);
 }
-

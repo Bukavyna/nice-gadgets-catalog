@@ -1,4 +1,4 @@
-@use "../../styles/mixins" as *;
+@use '../../styles/mixins' as *;
 
 .favoritesPage {
   margin-block-end: 56px;
@@ -24,7 +24,8 @@
   }
 
   .empty {
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 }

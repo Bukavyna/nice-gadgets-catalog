@@ -1,5 +1,5 @@
-@use "../../styles/mixins" as *;
-@use "../../styles/variables.module" as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables.module' as *;
 
 .productSlider {
   margin-right: -$padding-inline-mobile;
@@ -69,9 +69,7 @@
 
     scroll-snap-align: start;
 
-    width: calc(
-    (100% - (var(--items) - 1) * var(--gap)) / var(--items)
-    );
+    width: calc((100% - (var(--items) - 1) * var(--gap)) / var(--items));
     height: 100%;
 
     .productCard {
@@ -79,10 +77,10 @@
     }
   }
 
-    .cardWrapper {
-      width: 100%;
-    }
+  .cardWrapper {
+    width: 100%;
   }
+}
 
 .arrowLeft {
   transform: rotate(180deg);

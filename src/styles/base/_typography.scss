@@ -1,5 +1,5 @@
-@use "../variables.module" as *;
-@use "../mixins" as *;
+@use '../variables.module' as *;
+@use '../mixins' as *;
 
 h1 {
   font-size: $font-size-5xl;

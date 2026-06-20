@@ -1,5 +1,5 @@
-@use "../../styles/variables.module" as *;
-@use "../../styles/effects" as *;
+@use '../../styles/variables.module' as *;
+@use '../../styles/effects' as *;
 
 .navigation__right {
   height: 100%;
@@ -32,8 +32,8 @@
   justify-content: center;
   align-items: center;
 
-  color: #FFF;
-  background-color: #EB5757;
+  color: #fff;
+  background-color: #eb5757;
   border-radius: 50%;
 
   font-size: 9px;

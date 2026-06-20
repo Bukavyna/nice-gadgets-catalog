@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 import styles from './Header.module.scss';
 
 import { Logo } from '@/components/Logo';
-import { NavBarMobile } from '@/components/NavBarMobile';
-import { NavBarDesktop } from '@/components/NavBarDesktop/NavBarDesktop';
+import { NavBarMobile } from '../NavBarMobile';
+import { NavBarDesktop } from '../NavBarDesktop';
 import { goBottom } from '@/utils/scrollToPosition';
 import { ArrowButton } from '@/components/ArrowButton';
-import { Settings } from '@/components/Settings';
+import { Settings } from '../Settings';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

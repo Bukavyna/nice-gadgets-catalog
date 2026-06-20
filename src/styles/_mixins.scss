@@ -1,5 +1,5 @@
-@use "variables.module" as *;
-@use "./effects" as *;
+@use 'variables.module' as *;
+@use './effects' as *;
 
 @mixin on-tablet {
   @media (min-width: #{$breakpoint-tablet}) {
@@ -20,28 +20,28 @@
 }
 
 @mixin products-list {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 40px 16px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px 16px;
 
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 
-    @include on-tablet {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  @include on-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    @media (min-width: 838px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  @media (min-width: 838px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    @include on-desktop {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  @include on-desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    @include on-xx-desktop {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
+  @include on-xx-desktop {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
 
 @mixin nav-link-base {
@@ -99,7 +99,6 @@
     right: 16px;
     z-index: 1000;
     animation: dropdown-fade-in 0.4s ease;
-
   }
 
   .dropdownContent {
@@ -107,8 +106,8 @@
     flex-direction: column;
     gap: 8px;
     min-width: 280px;
-    background: var(--surface-color, #FFF);
-    border: 1px solid var(--border-color, #E2E6E9);
+    background: var(--surface-color, #fff);
+    border: 1px solid var(--border-color, #e2e6e9);
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     padding: 8px;
@@ -136,7 +135,7 @@
     }
 
     &.active {
-      border-color: var(--color-accent, #4219D0);
+      border-color: var(--color-accent, #4219d0);
     }
 
     .cardContent {
@@ -211,10 +210,12 @@
 
 @keyframes dropdown-fade-in {
   from {
-    opacity: 0; transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    opacity: 1; transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

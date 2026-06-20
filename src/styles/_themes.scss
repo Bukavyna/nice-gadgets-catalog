@@ -1,4 +1,4 @@
-@use "variables.module" as *;
+@use 'variables.module' as *;
 
 :root {
   --background-page: #{$c-white};
@@ -75,7 +75,9 @@ body.original-dark {
   --pagination-buttons-background-selected: #{$c-purple};
 }
 
-body.ice-cap, body.electric-cyan, body.apricot-sorbet {
+body.ice-cap,
+body.electric-cyan,
+body.apricot-sorbet {
   --pagination-buttons-forward-back-border-hover: #{$c-black};
   --pagination-buttons-border-hover: #{$c-black};
   --pagination-buttons-background-selected: #{$c-black};

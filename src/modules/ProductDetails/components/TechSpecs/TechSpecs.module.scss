@@ -1,4 +1,4 @@
-@use "../../../../styles/themes" as *;
+@use '../../../../styles/themes' as *;
 
 .techSpecsBlock {
   .sectionTitle {
@@ -21,7 +21,8 @@
   display: flex;
   justify-content: space-between;
 
-  .label, .value {
+  .label,
+  .value {
     font-size: 14px;
     line-height: 21px;
   }

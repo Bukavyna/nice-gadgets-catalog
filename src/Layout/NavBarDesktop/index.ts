@@ -1,1 +1,1 @@
-export * from './NavBarDesktop.module.scss';
+export * from './NavBarDesktop';

@@ -1,13 +1,18 @@
-@use "variables.module" as *;
-@use "effects";
-@use "base/fonts";
-@use "base/reset";
-@use "base/typography";
-@use "themes";
-@use "mixins" as *;
+@use 'variables.module' as *;
+@use 'effects';
+@use 'base/fonts';
+@use 'base/reset';
+@use 'base/typography';
+@use 'themes';
+@use 'mixins' as *;
 
 body {
-  font-family: Mont, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    Mont,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: $font-size-sm;
   font-weight: $font-weight-regular;
   line-height: 1.5;
@@ -15,7 +20,9 @@ body {
   background-color: var(--background-page);
   color: var(--color-primary);
 
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   overflow-y: auto;
 }
 

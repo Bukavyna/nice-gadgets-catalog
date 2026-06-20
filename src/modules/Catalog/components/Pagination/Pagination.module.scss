@@ -1,5 +1,5 @@
-@use "../../../../styles/mixins" as *;
-@use "../../../../styles/themes" as *;
+@use '../../../../styles/mixins' as *;
+@use '../../../../styles/themes' as *;
 
 .pagination {
   display: flex;
@@ -14,7 +14,8 @@
   }
 }
 
-.page, .arrow {
+.page,
+.arrow {
   display: flex;
   align-items: center;
   justify-content: center;

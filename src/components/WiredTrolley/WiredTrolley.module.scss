@@ -1,4 +1,4 @@
-@use "../../styles/mixins" as *;
+@use '../../styles/mixins' as *;
 
 .wiredTrolley {
   @include toggle-button;

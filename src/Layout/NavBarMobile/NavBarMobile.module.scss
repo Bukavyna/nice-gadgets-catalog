@@ -1,6 +1,6 @@
-@use "../../styles/variables.module" as *;
-@use "../../styles/effects" as *;
-@use "../../styles/mixins" as *;
+@use '../../styles/variables.module' as *;
+@use '../../styles/effects' as *;
+@use '../../styles/mixins' as *;
 
 .navigation {
   position: fixed;
@@ -48,7 +48,7 @@
     width: 100%;
     height: auto;
     margin-top: auto;
-    border-top: 1px solid  var(--border-color);
+    border-top: 1px solid var(--border-color);
   }
 
   &__iconLink {

@@ -33,8 +33,8 @@
   "sortBy": "Sort by",
 
   "sorts": {
-    "Newest" : "Newest",
-    "Alphabetically":  "Alphabetically",
+    "Newest": "Newest",
+    "Alphabetically": "Alphabetically",
     "Cheapest": "Cheapest"
   },
 

@@ -1,4 +1,4 @@
-@use "../../../../styles/mixins" as *;
+@use '../../../../styles/mixins' as *;
 
 .container {
   display: flex;
@@ -88,7 +88,8 @@
           display: flex;
           justify-content: space-between;
 
-          .specLabel, .specValue {
+          .specLabel,
+          .specValue {
             font-size: 12px;
             font-weight: 700;
             line-height: 1;
