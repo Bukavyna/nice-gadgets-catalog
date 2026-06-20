@@ -2,11 +2,11 @@
 
 ### *The gadget store you love*
 
-[![React](https://shields.io)](https://react.dev)
-[![TypeScript](https://shields.io)](https://typescriptlang.org)
-[![Vite](https://shields.io)](https://vitejs.dev)
-[![SCSS](https://shields.io)](https://sass-lang.com)
-[![Cypress](https://shields.io)](https://cypress.io)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Sass](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)](https://www.cypress.io/)
 
 A premium, fully-responsive e-commerce catalog for smartphones, tablets, and accessories built with React, TypeScript, and SCSS.
 

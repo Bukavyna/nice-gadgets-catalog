@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Player } from '@lordicon/react';
 
 import styles from './HeartIcon.module.scss';
@@ -12,12 +12,12 @@ interface HeartIconProps {
   trigger?: number;
 }
 
-export const HeartIcon: React.FC<HeartIconProps> = ({
+export const HeartIcon = ({
   isSelected = false,
   trigger,
-}) => {
+}: HeartIconProps) => {
   const { playerRef, handleMouseEnter } = useLordicon();
-  const iconColor = isSelected ? '#EB5757' : '#808080';
+  const iconColor = isSelected ? '#FF2400' : '#808080';
 
   useEffect(() => {
     if (isSelected && playerRef.current) {
