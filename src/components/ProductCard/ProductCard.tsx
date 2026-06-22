@@ -5,7 +5,6 @@ import styles from './ProductCard.module.scss';
 import { ProductType } from '../../types/product.types';
 import { getProductPrice } from '../../utils/priceHelper';
 import { ProductActions } from '../ProductActions';
-import classNames from 'classnames';
 import { goTo } from '../../utils/scrollToPosition';
 
 interface ProductCardProps {
@@ -13,7 +12,7 @@ interface ProductCardProps {
   className?: string;
 }
 
-export const ProductCard = ({ product, className }: ProductCardProps) => {
+export const ProductCard = ({ product }: ProductCardProps) => {
   const { id: productId, name, screen, capacity, ram } = product;
 
   const { oldPrice, currentPrice } = getProductPrice(product);

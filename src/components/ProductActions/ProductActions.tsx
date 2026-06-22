@@ -12,13 +12,13 @@ import classNames from 'classnames';
 interface ProductActionsProps {
   product: ProductType;
   variant?: 'card' | 'details';
-  className: string;
+  className?: string;
 }
 
 export const ProductActions = ({
   product,
   variant = 'card',
-  className,
+  className = '',
 }: ProductActionsProps) => {
   const { addToCart, isInCart } = useCart();
   const { toggleFavorite, isFavorites } = useFavorites();

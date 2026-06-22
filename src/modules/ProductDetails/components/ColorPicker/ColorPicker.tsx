@@ -36,7 +36,7 @@ interface ColorPickerProps {
   currentColor: string;
   getNewPath: (color: string) => string;
   itemId: string;
-  className: string;
+  className?: string;
   disabled?: boolean;
 }
 
@@ -62,7 +62,7 @@ export const ColorPicker = ({
   currentColor,
   getNewPath,
   itemId,
-  className,
+  className = '',
   disabled,
 }: ColorPickerProps) => {
   const numericId = generateNumericId(itemId);

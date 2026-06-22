@@ -8,7 +8,7 @@ interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   type?: 'button' | 'submit';
-  className: '';
+  className?: string;
   variant?: 'primary' | 'secondary';
 }
 
@@ -18,7 +18,7 @@ export const Button = ({
   variant = 'primary',
   disabled = false,
   type = 'button',
-  className,
+  className = '',
 }: ButtonProps) => {
   return (
     <button
