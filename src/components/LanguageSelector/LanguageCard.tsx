@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import rawStyles from './LanguageSelector.module.scss';
@@ -12,11 +11,11 @@ export interface LanguageCardProps {
   onClick: () => void;
 }
 
-export const LanguageCard: React.FC<LanguageCardProps> = ({
+export const LanguageCard = ({
   language,
   isActive,
   onClick,
-}) => {
+}: LanguageCardProps) => {
   const { t } = useTranslation();
   const inputId = `language-${language.id}`;
 

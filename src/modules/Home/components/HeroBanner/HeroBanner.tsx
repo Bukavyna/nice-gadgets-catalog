@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './HeroBanner.module.scss';
@@ -6,7 +5,7 @@ import styles from './HeroBanner.module.scss';
 import { useSlider } from '../../../../hooks/useSlider';
 import { ArrowButton } from '../../../../components/ArrowButton';
 
-export const HeroBanner: React.FC = () => {
+export const HeroBanner = () => {
   const banners = [
     {
       id: 1,

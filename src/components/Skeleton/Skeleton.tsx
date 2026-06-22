@@ -1,8 +1,6 @@
-import React from 'react';
-
 import styles from './Skeleton.module.scss';
 
-export const Skeleton: React.FC = () => {
+export const Skeleton = () => {
   return (
     <div className={styles.skeleton__container}>
       <div className={styles.skeleton}>

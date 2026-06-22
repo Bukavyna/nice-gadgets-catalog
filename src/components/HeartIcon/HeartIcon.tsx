@@ -12,10 +12,7 @@ interface HeartIconProps {
   trigger?: number;
 }
 
-export const HeartIcon = ({
-  isSelected = false,
-  trigger,
-}: HeartIconProps) => {
+export const HeartIcon = ({ isSelected = false, trigger }: HeartIconProps) => {
   const { playerRef, handleMouseEnter } = useLordicon();
   const iconColor = isSelected ? '#FF2400' : '#808080';
 

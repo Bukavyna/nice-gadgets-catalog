@@ -23,7 +23,6 @@ export const useProductDetails = (
       return;
     }
 
-    setDetails(null);
     setLoading(true);
     setError('');
 

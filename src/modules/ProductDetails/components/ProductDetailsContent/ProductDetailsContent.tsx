@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './ProductDetailsContent.module.scss';
 
 import { SuggestedProducts } from '../SuggestedProducts';
@@ -12,10 +10,10 @@ interface ProductDetailsContentProps {
   loading: boolean;
 }
 
-export const ProductDetailsContent: React.FC<ProductDetailsContentProps> = ({
+export const ProductDetailsContent = ({
   details,
   loading,
-}) => {
+}: ProductDetailsContentProps) => {
   const { current, previous } = useCrossFade(details, 500);
 
   if (!current && !previous && loading) {

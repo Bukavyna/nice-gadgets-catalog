@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './AboutSection.module.scss';
 
 import { ProductDetailsType } from '../../../../types/product-details.types';
@@ -10,10 +8,10 @@ interface AboutSectionProps {
   className: string;
 }
 
-export const AboutSection: React.FC<AboutSectionProps> = ({
+export const AboutSection = ({
   details,
   className,
-}) => {
+}: AboutSectionProps) => {
   return (
     <div className={classNames(styles.aboutSection, className)}>
       <h3 className={styles.sectionTitle}>About</h3>

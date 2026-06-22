@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -11,10 +10,10 @@ interface NavBarMobileProps {
   onClose: () => void;
 }
 
-export const NavBarMobile: React.FC<NavBarMobileProps> = ({
+export const NavBarMobile = ({
   isOpen,
   onClose,
-}) => {
+}: NavBarMobileProps) => {
   const { t } = useTranslation();
 
   return (

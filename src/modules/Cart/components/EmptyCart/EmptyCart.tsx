@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -6,7 +5,7 @@ import styles from './EmptyCart.module.scss';
 
 import emptyCartImg from '../../../../img/cart-is-empty.png';
 
-export const EmptyCart: React.FC = () => {
+export const EmptyCart = () => {
   const { t } = useTranslation();
 
   return (

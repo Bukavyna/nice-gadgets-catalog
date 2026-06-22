@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -10,7 +9,7 @@ interface NavBarDesktopProps {
   onClose: () => void;
 }
 
-export const NavBarDesktop: React.FC<NavBarDesktopProps> = ({ onClose }) => {
+export const NavBarDesktop = ({ onClose }: NavBarDesktopProps) => {
   const { t } = useTranslation();
 
   return (

@@ -4,8 +4,6 @@ import { useRef } from 'react';
 
 import baseStyles from './NavIcons.module.scss';
 
-// import wiredTrolley from '../../img/wiredTrolley1.json';
-
 import { useFavorites } from '@/hooks/useFavorites';
 import { useCart } from '@/hooks/useCart';
 import { HeartIcon } from '../../components/HeartIcon';

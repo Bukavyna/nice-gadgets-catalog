@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -10,7 +9,7 @@ import { HeroBanner } from './components/HeroBanner';
 import { Spinner } from '../../components/Spinner';
 import { NewModels } from './components/NewModels';
 
-export const HomePage: React.FC = () => {
+export const HomePage = () => {
   const [loading, setLoading] = useState(true);
 
   const { t } = useTranslation();

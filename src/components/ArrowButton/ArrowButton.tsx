@@ -1,19 +1,19 @@
-import React from 'react';
+import type { ButtonHTMLAttributes } from 'react';
 
 import styles from './ArrowButton.module.scss';
 
 import { ArrowIcon } from '../ArrowIcon';
 
 interface ArrowButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   arrowClassName?: string;
 }
 
-export const ArrowButton: React.FC<ArrowButtonProps> = ({
+export const ArrowButton = ({
   arrowClassName = '',
   className = '',
   ...rest
-}) => {
+}: ArrowButtonProps) => {
   return (
     <button className={`${styles.arrowButton} ${className}`} {...rest}>
       <ArrowIcon className={`${arrowClassName} ${styles.arrowIcon}`} />

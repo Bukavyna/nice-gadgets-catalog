@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -8,7 +7,7 @@ import { CATEGORIES } from '../../../../utils/categories';
 import { filterProductsByCategory } from '../../../../utils/filtering';
 import { useProducts } from '../../../../hooks/useProducts';
 
-export const CategoryLinks: React.FC = () => {
+export const CategoryLinks = () => {
   const { products } = useProducts();
   const { t } = useTranslation();
 

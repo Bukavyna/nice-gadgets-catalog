@@ -1,10 +1,11 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import type { ReactNode } from 'react';
+import { Component } from 'react';
 
 import styles from './ErrorBoundary.module.scss';
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 interface State {
@@ -28,7 +29,7 @@ const ErrorFallback = () => {
   );
 };
 
-export class ErrorBoundary extends React.Component<Props, State> {
+export class ErrorBoundary extends Component<Props, State> {
   state: State = {
     hasError: false,
   };

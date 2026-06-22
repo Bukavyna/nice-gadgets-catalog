@@ -1,12 +1,10 @@
-import React from 'react';
-
 import styles from './ArrowIcon.module.scss';
 
 interface ArrowIconProps {
   className?: string;
 }
 
-export const ArrowIcon: React.FC<ArrowIconProps> = ({ className = '' }) => {
+export const ArrowIcon = ({ className = '' }: ArrowIconProps) => {
   return (
     <svg
       viewBox="0 0 6 10"

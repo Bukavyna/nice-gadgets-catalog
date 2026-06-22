@@ -26,7 +26,8 @@
       flex-shrink: 0;
       justify-content: center;
       align-items: center;
-      height: 130px;
+      height: 200px;
+      margin-bottom: 13px;
 
       .icon {
         height: 100%;
@@ -51,10 +52,6 @@
   &:hover {
     color: var(--color-primare);
   }
-}
-
-.priceContainer {
-  @include price-container;
 }
 
 .separator {
@@ -92,4 +89,8 @@
     white-space: nowrap;
     overflow: hidden;
   }
+}
+
+.priceContainer {
+  @include price-container;
 }

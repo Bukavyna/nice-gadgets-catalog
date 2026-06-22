@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -6,7 +5,7 @@ import styles from './BackButton.module.scss';
 
 import { ArrowIcon } from '../ArrowIcon';
 
-export const BackButton: React.FC = () => {
+export const BackButton = () => {
   const navigate = useNavigate();
 
   const { t } = useTranslation();

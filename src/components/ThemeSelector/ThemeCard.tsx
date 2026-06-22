@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import rawStyles from './ThemeSelector.module.scss';
@@ -12,11 +11,11 @@ interface ThemeCardProps {
   onClick: () => void;
 }
 
-export const ThemeCard: React.FC<ThemeCardProps> = ({
+export const ThemeCard = ({
   theme,
   isActive,
   onClick,
-}) => {
+}: ThemeCardProps) => {
   const { t } = useTranslation();
   const inputId = `theme-${theme.id}`;
 

@@ -1,4 +1,5 @@
-import React, { createContext } from 'react';
+import { createContext } from 'react';
+import type { ReactNode } from 'react';
 
 import { CartContextType } from '../../types/cart-context.types';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
@@ -12,10 +13,10 @@ export const CartContext = createContext<CartContextType | undefined>(
 );
 
 interface CartProviderProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
+export const CartProvider = ({ children }: CartProviderProps) => {
   const [cart, setCart] = useLocalStorage<CartItemType[]>(CART_STORAGE_KEY, []);
 
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);

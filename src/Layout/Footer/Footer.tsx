@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import styles from './Footer.module.scss';
@@ -7,7 +6,7 @@ import { Logo } from '../../components/Logo';
 import { goTo } from '../../utils/scrollToPosition';
 import { ArrowButton } from '../../components/ArrowButton';
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
   const { t } = useTranslation();
 
   return (

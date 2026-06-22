@@ -5,8 +5,6 @@ export const wait = (delay: number): Promise<void> => {
 };
 
 export async function client<T>(url: string, signal?: AbortSignal): Promise<T> {
-  await wait(500);
-
   const response = await fetch(url, { signal } as ResponseInit);
 
   if (!response.ok) {

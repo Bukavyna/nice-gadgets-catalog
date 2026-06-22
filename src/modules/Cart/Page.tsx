@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import styles from './CartPage.module.scss';
@@ -9,7 +8,7 @@ import { CartSummary } from './components/CartSummary/CartSummary';
 import { EmptyCart } from './components/EmptyCart';
 import { BackButton } from '../../components/BackButton';
 
-export const CartPage: React.FC = () => {
+export const CartPage = () => {
   const { cart } = useCart();
 
   const { t } = useTranslation();

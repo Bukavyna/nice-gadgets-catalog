@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './ProductCard.module.scss';
@@ -14,10 +13,7 @@ interface ProductCardProps {
   className?: string;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({
-  product,
-  className,
-}) => {
+export const ProductCard = ({ product, className }: ProductCardProps) => {
   const { id: productId, name, screen, capacity, ram } = product;
 
   const { oldPrice, currentPrice } = getProductPrice(product);
@@ -46,8 +42,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         <h4 className={styles.name}>{name}</h4>
 
         <div className={styles.priceContainer}>
-          <span className={styles.newPrice}>{currentPrice}</span>
-          {oldPrice && <span className={styles.oldPrice}>{oldPrice}</span>}
+          <span className={styles.newPrice}>$ {currentPrice}</span>
+          {oldPrice && <span className={styles.oldPrice}>$ {oldPrice}</span>}
         </div>
 
         <div className={styles.separator} />
@@ -71,7 +67,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </Link>
 
       <ProductActions
-        className={classNames(styles.productActions, className)}
         product={product}
       />
     </div>

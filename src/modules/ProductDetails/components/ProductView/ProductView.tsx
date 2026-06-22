@@ -38,11 +38,7 @@ export const ProductView = ({
   className,
 }: ProductViewProps) => {
   return (
-    <div
-      className={classNames(styles.container, {
-        [styles.loading]: isLoading,
-      })}
-    >
+    <div className={styles.container}>
       <nav>
         <Breadcrumbs />
       </nav>
@@ -65,7 +61,6 @@ export const ProductView = ({
               currentColor={details.color}
               getNewPath={color => getNewPath(details, color, undefined)}
               itemId={details.id}
-              disabled={!!isLoading}
             />
 
             <div className={styles.divider}></div>
@@ -75,14 +70,13 @@ export const ProductView = ({
               capacity={details.capacityAvailable}
               currentCapacity={details.capacity}
               getNewPath={capacity => getNewPath(details, undefined, capacity)}
-              disabled={!!isLoading}
             />
 
             <div className={styles.divider}></div>
 
             <div className={styles.priceContainer}>
-              <p className={styles.newPrice}>{details.priceDiscount}</p>
-              <p className={styles.oldPrice}>{details.priceRegular}</p>
+              <p className={styles.newPrice}>$ {details.priceDiscount}</p>
+              <p className={styles.oldPrice}>$ {details.priceRegular}</p>
             </div>
 
             <ProductActions

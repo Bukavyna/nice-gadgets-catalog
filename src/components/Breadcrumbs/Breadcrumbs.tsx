@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Player } from '@lordicon/react';
@@ -11,7 +10,7 @@ import { useLordicon } from '../../hooks/useLordicon';
 
 import { getCategoryByPath } from '../../utils/categories';
 
-export const Breadcrumbs: React.FC = () => {
+export const Breadcrumbs = () => {
   const { pathname } = useLocation();
   const { t } = useTranslation();
 

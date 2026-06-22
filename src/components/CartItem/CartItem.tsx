@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './CartItem.module.scss';
 
 import { CartItemType } from '../../types/cart-item.types';
@@ -10,7 +8,7 @@ interface CartItemProps {
   item: CartItemType;
 }
 
-export const CartItem: React.FC<CartItemProps> = ({ item }) => {
+export const CartItem = ({ item }: CartItemProps) => {
   const { increaseQuantity, decreaseQuantity, removeFromCart } = useCart();
   const { product, quantity } = item;
 

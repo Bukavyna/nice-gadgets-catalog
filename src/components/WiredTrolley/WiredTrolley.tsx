@@ -7,7 +7,7 @@ import wiredTrolley from '../../img/wiredTrolley1.json';
 import classNames from 'classnames';
 
 interface WiredTrolleyProps {
-  className?: string;
+  className: string;
   trigger?: number;
 }
 

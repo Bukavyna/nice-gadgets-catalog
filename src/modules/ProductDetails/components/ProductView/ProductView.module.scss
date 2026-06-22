@@ -128,32 +128,6 @@
   }
 }
 
-.loading {
-  pointer-events: none;
-}
-
 .priceContainer {
-  margin-block: 32px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  .newPrice {
-    color: var(--color-primary);
-
-    font-size: 22px;
-    line-height: 140%;
-    letter-spacing: 0;
-    font-weight: 800;
-  }
-
-  .oldPrice {
-    color: var(--color-secondary);
-    text-decoration: line-through;
-
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 0;
-  }
+  @include price-container;
 }

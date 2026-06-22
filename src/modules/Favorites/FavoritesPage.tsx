@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import styles from './FavoritesPage.module.scss';
@@ -7,7 +6,7 @@ import { ProductCard } from '../../components/ProductCard';
 import { useFavorites } from '../../hooks/useFavorites';
 import { Breadcrumbs } from '../../components/Breadcrumbs';
 
-export const FavoritesPage: React.FC = () => {
+export const FavoritesPage = () => {
   const { favorites } = useFavorites();
   const { t } = useTranslation();
 

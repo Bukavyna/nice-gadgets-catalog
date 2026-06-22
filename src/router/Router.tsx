@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import { Layout } from '../Layout/Layout';
@@ -9,7 +8,7 @@ import { NotFound } from '../modules/NotFound';
 import { CartPage } from '../modules/Cart/Page';
 import { FavoritesPage } from '../modules/Favorites';
 
-export const Router: React.FC = () => {
+export const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -17,7 +16,7 @@ export const Router: React.FC = () => {
 
         <Route
           path=":category/:productId"
-          element={<ProductDetailsPage key={location.pathname} />}
+          element={<ProductDetailsPage />}
         />
 
         <Route path="cart" element={<CartPage />} />

@@ -1,4 +1,5 @@
-import React, { createContext } from 'react';
+import { createContext } from 'react';
+import type { ReactNode } from 'react';
 
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { FavoritesContextType } from '../../types/favorites.types';
@@ -8,9 +9,13 @@ export const FavoritesContext = createContext<FavoritesContextType | undefined>(
   undefined,
 );
 
-export const FavoritesProvider: React.FC<{ children: React.ReactNode }> = ({
+interface FavoritesProviderProps {
+  children: ReactNode;
+}
+
+export const FavoritesProvider = ({
   children,
-}) => {
+}: FavoritesProviderProps) => {
   const [favorites, setFavorites] = useLocalStorage<ProductType[]>(
     'favorites',
     [],

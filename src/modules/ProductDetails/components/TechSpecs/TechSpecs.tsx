@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './TechSpecs.module.scss';
 import { ProductDetailsType } from '../../../../types/product-details.types';
 import classNames from 'classnames';
@@ -44,7 +42,7 @@ interface TechSpecsProps {
   className: string;
 }
 
-export const TechSpecs: React.FC<TechSpecsProps> = ({ details, className }) => {
+export const TechSpecs = ({ details, className }: TechSpecsProps) => {
   return (
     <div className={classNames(styles.techSpecsBlock, className)}>
       <h3 className={styles.sectionTitle}>Tech specs</h3>

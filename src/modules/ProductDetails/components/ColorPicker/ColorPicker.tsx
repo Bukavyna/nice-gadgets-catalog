@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './ColorPicker.module.scss';
@@ -37,7 +36,7 @@ interface ColorPickerProps {
   currentColor: string;
   getNewPath: (color: string) => string;
   itemId: string;
-  className?: string;
+  className: string;
   disabled?: boolean;
 }
 
@@ -58,14 +57,14 @@ export const generateNumericId = (str: string): number => {
   return Math.abs(hash) % 1000000;
 };
 
-export const ColorPicker: React.FC<ColorPickerProps> = ({
+export const ColorPicker = ({
   colors,
   currentColor,
   getNewPath,
   itemId,
   className,
   disabled,
-}) => {
+}: ColorPickerProps) => {
   const numericId = generateNumericId(itemId);
 
   return (
