@@ -16,10 +16,9 @@ interface NavIconsProps {
 
 export const NavIcons = ({ styles, onClose }: NavIconsProps) => {
   const { favorites } = useFavorites();
-  const { cart } = useCart();
+  const { cartCount } = useCart();
 
   const favoritesCount = favorites.length;
-  const cartCount = cart.length;
   const cartRef = useRef<Player | null>(null);
 
   const getClassName = (className: string) => {

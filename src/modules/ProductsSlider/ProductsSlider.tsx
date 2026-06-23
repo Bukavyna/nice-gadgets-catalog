@@ -21,6 +21,7 @@ interface ProductsSliderProps {
   excludeItemId?: string;
   className?: string;
   limit?: number;
+  showOldPrice?: boolean;
 }
 
 const resolveProductsByPreset = (
@@ -74,6 +75,7 @@ export const ProductsSlider = ({
   excludeItemId,
   className = '',
   limit = 12,
+  showOldPrice = true,
 }: ProductsSliderProps) => {
   const [products, setProducts] = useState<ProductType[]>([]);
   const [loading, setLoading] = useState(true);
@@ -136,7 +138,11 @@ export const ProductsSlider = ({
       >
         {products.map(product => (
           <div className={styles.slide} key={product.id}>
-            <ProductCard className={styles.productCard} product={product} />
+            <ProductCard
+              className={styles.productCard}
+              product={product}
+              showOldPrice={showOldPrice}
+            />
           </div>
         ))}
       </div>

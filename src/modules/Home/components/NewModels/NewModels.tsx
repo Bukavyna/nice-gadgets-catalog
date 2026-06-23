@@ -10,6 +10,7 @@ export const NewModels = () => {
     <ProductsSlider
       title={t('title.newModels')}
       productsPresetType={ProductsPresetType.Newest}
+      showOldPrice={false}
     />
   );
 };

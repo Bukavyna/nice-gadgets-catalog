@@ -8,10 +8,7 @@ interface AboutSectionProps {
   className: string;
 }
 
-export const AboutSection = ({
-  details,
-  className,
-}: AboutSectionProps) => {
+export const AboutSection = ({ details, className }: AboutSectionProps) => {
   return (
     <div className={classNames(styles.aboutSection, className)}>
       <h3 className={styles.sectionTitle}>About</h3>

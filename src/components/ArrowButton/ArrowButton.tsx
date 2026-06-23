@@ -4,8 +4,7 @@ import styles from './ArrowButton.module.scss';
 
 import { ArrowIcon } from '../ArrowIcon';
 
-interface ArrowButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ArrowButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   arrowClassName?: string;
 }
 

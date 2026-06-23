@@ -10,10 +10,7 @@ interface NavBarMobileProps {
   onClose: () => void;
 }
 
-export const NavBarMobile = ({
-  isOpen,
-  onClose,
-}: NavBarMobileProps) => {
+export const NavBarMobile = ({ isOpen, onClose }: NavBarMobileProps) => {
   const { t } = useTranslation();
 
   return (

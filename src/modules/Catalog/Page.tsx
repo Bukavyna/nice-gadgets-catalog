@@ -25,7 +25,7 @@ export const CatalogPage = () => {
   const { loading, error, products } = useProducts(category || 'phones');
 
   const sortBy = (searchParams.get('sort') as SortType) || SortType.Newest;
-  const perPage = searchParams.get('perPage') || '16';
+  const perPage = searchParams.get('perPage') || '4';
   const currentPage = Number(searchParams.get('page')) || 1;
 
   const updateSearchWith = (params: { [key: string]: string | null }) => {

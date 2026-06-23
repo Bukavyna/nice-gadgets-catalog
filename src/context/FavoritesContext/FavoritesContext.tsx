@@ -13,9 +13,7 @@ interface FavoritesProviderProps {
   children: ReactNode;
 }
 
-export const FavoritesProvider = ({
-  children,
-}: FavoritesProviderProps) => {
+export const FavoritesProvider = ({ children }: FavoritesProviderProps) => {
   const [favorites, setFavorites] = useLocalStorage<ProductType[]>(
     'favorites',
     [],

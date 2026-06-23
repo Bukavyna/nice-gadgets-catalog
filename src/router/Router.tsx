@@ -14,10 +14,7 @@ export const Router = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
 
-        <Route
-          path=":category/:productId"
-          element={<ProductDetailsPage />}
-        />
+        <Route path=":category/:productId" element={<ProductDetailsPage />} />
 
         <Route path="cart" element={<CartPage />} />
         <Route path="favorites" element={<FavoritesPage />} />

@@ -49,7 +49,6 @@ export const Pagination = ({
 
   const goToPage = (page: number) => {
     onPageChange(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const visiblePages = getVisiblePages();

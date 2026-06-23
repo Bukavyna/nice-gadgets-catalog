@@ -10,9 +10,13 @@ import { goTo } from '../../utils/scrollToPosition';
 interface ProductCardProps {
   product: ProductType;
   className?: string;
+  showOldPrice?: boolean;
 }
 
-export const ProductCard = ({ product }: ProductCardProps) => {
+export const ProductCard = ({
+  product,
+  showOldPrice = true,
+}: ProductCardProps) => {
   const { id: productId, name, screen, capacity, ram } = product;
 
   const { oldPrice, currentPrice } = getProductPrice(product);
@@ -42,7 +46,9 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 
         <div className={styles.priceContainer}>
           <span className={styles.newPrice}>$ {currentPrice}</span>
-          {oldPrice && <span className={styles.oldPrice}>$ {oldPrice}</span>}
+          {showOldPrice && oldPrice && (
+            <span className={styles.oldPrice}>$ {oldPrice}</span>
+          )}
         </div>
 
         <div className={styles.separator} />
@@ -65,9 +71,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         </div>
       </Link>
 
-      <ProductActions
-        product={product}
-      />
+      <ProductActions product={product} />
     </div>
   );
 };

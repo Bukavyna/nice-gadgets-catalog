@@ -11,11 +11,7 @@ interface ThemeCardProps {
   onClick: () => void;
 }
 
-export const ThemeCard = ({
-  theme,
-  isActive,
-  onClick,
-}: ThemeCardProps) => {
+export const ThemeCard = ({ theme, isActive, onClick }: ThemeCardProps) => {
   const { t } = useTranslation();
   const inputId = `theme-${theme.id}`;
 
